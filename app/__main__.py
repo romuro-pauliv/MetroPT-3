@@ -11,9 +11,11 @@ genlog.active_color()
 # |--------------------------------------------------------------------------------------------------------------------|
 
 # | Imports |----------------------------------------------------------------------------------------------------------|
-from resources.read_arff import ReadARFF
+from resources.read_csv import ReadCSV
 import pandas as pd
 # |--------------------------------------------------------------------------------------------------------------------|
 
-reader: ReadARFF = ReadARFF()
-df: pd.DataFrame = reader.read("data_example")
+reader: ReadCSV = ReadCSV()
+df: pd.DataFrame = reader.read("MetroPT3(AirCompressor)")
+
+print(df.describe())

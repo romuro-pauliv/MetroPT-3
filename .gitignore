@@ -9,6 +9,9 @@ __pycache__/
 # Bin Cache
 *.bin
 
+# data (csv)
+*.csv
+
 # Distribution / packaging
 .Python
 build/

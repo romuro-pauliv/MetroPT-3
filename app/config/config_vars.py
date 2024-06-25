@@ -19,3 +19,7 @@ class ConfigPath(object):
 class ConfigExtension(object):
     DATA: str = configfiles.dot_ini['paths']['extensions']['extension_data']
     BIN : str = configfiles.dot_ini['paths']['extensions']['extension_serialization']
+    
+
+class ConfigCSV(object):
+    DELIMITER: str = configfiles.dot_ini['data']['csv_config']['delimiter']
