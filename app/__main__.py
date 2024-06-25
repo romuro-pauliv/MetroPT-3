@@ -18,4 +18,8 @@ import pandas as pd
 reader: ReadCSV = ReadCSV()
 df: pd.DataFrame = reader.read("MetroPT3(AirCompressor)")
 
-print(df.describe())
+import matplotlib.pyplot as plt
+
+plt.plot(df['Oil_temperature'])
+
+plt.show()
