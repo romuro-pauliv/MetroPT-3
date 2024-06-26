@@ -23,3 +23,12 @@ class ConfigExtension(object):
 
 class ConfigCSV(object):
     DELIMITER: str = configfiles.dot_ini['data']['csv_config']['delimiter']
+
+
+class FeaturesNames(object):
+    TIMESTAMP: str = configfiles.dot_ini['data']['features']['timestamp']
+    OIL_TEMP : str = configfiles.dot_ini['data']['features']['oil_temperature']
+
+
+class ConfigTimestamp(object):
+    FORMAT: str = configfiles.dot_ini['data']['datetime_format']['timestamp_format']
